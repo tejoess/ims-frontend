@@ -1,0 +1,33 @@
+{
+  "ticket": "EPT-28",
+  "risk": "MEDIUM",
+  "branch": "feature/EPT-28",
+  "checkpoint_sha": "5808c48",
+  "phase": "PR",
+  "plan_approved": true,
+  "red_captured": true,
+  "attempt": 1,
+  "max_attempts": 3,
+  "verification": "passed",
+  "review": "approved",
+  "_phases": [
+    "ANALYSIS",
+    "WAITING_FOR_APPROVAL",
+    "IMPLEMENTATION",
+    "VERIFICATION",
+    "FIX",
+    "EVIDENCE",
+    "REVIEW",
+    "APPROVED",
+    "PR",
+    "BLOCKED",
+    "ABANDONED"
+  ],
+  "_metrics": {
+    "planned_at": "2026-10-07",
+    "approved_at": "2026-10-07T00:00:00Z",
+    "green_at": "2026-10-07T00:00:00Z",
+    "files_changed": 4,
+    "diff_lines": 1190
+  }
+}

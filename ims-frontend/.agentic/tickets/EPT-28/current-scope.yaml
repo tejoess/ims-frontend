@@ -1,0 +1,12 @@
+ticket: EPT-28
+branch: feature/EPT-28
+risk: MEDIUM
+
+allowed_paths:
+  - src/components/Sidebar.js
+  - src/App.js
+  - src/pages/AuditLog.js
+  - src/pages/AuditLog.css
+
+frozen_tests:
+  - src/pages/AuditLog.test.js
