@@ -1,0 +1,450 @@
+.audit-log-page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 36px 64px;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+
+.audit-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.audit-page-title {
+  margin: 0 0 4px;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.audit-page-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: var(--gray-500);
+}
+
+/* ── Export warning ─────────────────────────────────────────────────────── */
+
+.audit-export-warning {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  border-radius: var(--radius-md, 8px);
+  font-size: 13px;
+  color: #92400E;
+}
+
+/* ── Filter card ────────────────────────────────────────────────────────── */
+
+.audit-filter-card {
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.audit-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.audit-input {
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid #D1D5DB;
+  border-radius: var(--radius-md, 8px);
+  font-size: 13px;
+  color: var(--gray-800, #1F2937);
+  background: white;
+  flex: 1 1 160px;
+  min-width: 0;
+}
+
+.audit-input:focus {
+  outline: none;
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.audit-date-input {
+  flex: 0 0 auto;
+  width: 140px;
+}
+
+.audit-select {
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #D1D5DB;
+  border-radius: var(--radius-md, 8px);
+  font-size: 13px;
+  color: var(--gray-800, #1F2937);
+  background: white;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.audit-date-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.audit-date-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6B7280;
+  white-space: nowrap;
+}
+
+.audit-date-error {
+  margin: 0;
+  font-size: 12px;
+  color: #DC2626;
+}
+
+/* ── Chip row ───────────────────────────────────────────────────────────── */
+
+.audit-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.audit-chip-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #9CA3AF;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-right: 2px;
+}
+
+.audit-chip-divider {
+  width: 1px;
+  height: 20px;
+  background: #E5E7EB;
+  margin: 0 6px;
+  flex-shrink: 0;
+}
+
+.audit-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 11px;
+  border-radius: 9999px;
+  border: 1px solid #D1D5DB;
+  background: #F9FAFB;
+  font-size: 12px;
+  color: #374151;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.audit-chip:hover {
+  border-color: #93C5FD;
+  background: #EFF6FF;
+}
+
+.audit-chip-active {
+  border-color: #2563EB;
+  background: #EFF6FF;
+  color: #1E40AF;
+  font-weight: 600;
+}
+
+.audit-clear-all-btn {
+  margin-left: auto;
+  padding: 4px 11px;
+  border-radius: 9999px;
+  border: 1px solid #FECACA;
+  background: #FEF2F2;
+  color: #DC2626;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.audit-clear-all-btn:hover {
+  background: #FEE2E2;
+}
+
+/* ── Category dot ───────────────────────────────────────────────────────── */
+
+.audit-cat-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── Results bar ────────────────────────────────────────────────────────── */
+
+.audit-results-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #6B7280;
+}
+
+/* ── Table card ─────────────────────────────────────────────────────────── */
+
+.audit-table-card {
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.audit-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.audit-table thead tr {
+  background: #F9FAFB;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.audit-table th {
+  padding: 11px 16px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.audit-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #F3F4F6;
+  vertical-align: middle;
+}
+
+.audit-row {
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.audit-row:hover {
+  background: #F9FAFB;
+}
+
+.audit-row-expanded {
+  background: #EFF6FF;
+  border-bottom-color: #DBEAFE;
+}
+
+.audit-ts {
+  color: #6B7280;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.audit-cat {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.audit-event-name {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 11.5px;
+  color: #111827;
+}
+
+.audit-actor {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #374151;
+}
+
+.audit-expand-arrow {
+  text-align: center;
+  color: #9CA3AF;
+  font-size: 12px;
+  width: 32px;
+}
+
+/* ── Severity badge ─────────────────────────────────────────────────────── */
+
+.audit-severity-badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ── Metadata panel ─────────────────────────────────────────────────────── */
+
+.audit-meta-row td {
+  padding: 0;
+  border-bottom: none;
+}
+
+.audit-metadata-panel {
+  background: #F0F7FF;
+  border-top: 2px solid #93C5FD;
+  padding: 16px 20px;
+}
+
+.audit-metadata-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1E40AF;
+  margin-bottom: 12px;
+}
+
+.audit-meta-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.audit-meta-card {
+  border: 1px solid #DBEAFE;
+  border-radius: 8px;
+  padding: 9px 14px;
+  background: white;
+  min-width: 120px;
+}
+
+.audit-meta-key {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.audit-meta-value {
+  font-size: 13px;
+  color: #111827;
+  word-break: break-word;
+}
+
+.audit-meta-empty {
+  margin: 0;
+  font-size: 13px;
+  color: #9CA3AF;
+}
+
+/* ── Skeleton ───────────────────────────────────────────────────────────── */
+
+.audit-skeleton-wrapper {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.audit-skeleton-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ── Empty state ────────────────────────────────────────────────────────── */
+
+.audit-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.audit-empty-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.audit-empty-title {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.audit-empty-subtitle {
+  margin: 0 0 20px;
+  font-size: 13.5px;
+  color: #6B7280;
+}
+
+/* ── Error state ────────────────────────────────────────────────────────── */
+
+.audit-error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 24px;
+  gap: 16px;
+  text-align: center;
+}
+
+.audit-error-msg {
+  margin: 0;
+  font-size: 14px;
+  color: #DC2626;
+}
+
+/* ── Pagination ─────────────────────────────────────────────────────────── */
+
+.audit-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.audit-page-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #2563EB;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.audit-page-of {
+  font-size: 13px;
+  color: #6B7280;
+}
